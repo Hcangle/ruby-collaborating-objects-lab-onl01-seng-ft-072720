@@ -8,6 +8,7 @@ def initialize(name)
  @name = name 
  @artist = artist 
  @@all
+ save
 end 
 
 def artist_name=(name)
