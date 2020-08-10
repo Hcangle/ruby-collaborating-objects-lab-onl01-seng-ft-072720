@@ -5,6 +5,8 @@ attr_accessor :name, :artist
 
 def initialize(name)
  @name = name 
+ @artist = artist 
+ @all= []
 end 
 
 def artist_name=(name)
@@ -19,4 +21,12 @@ def artist_name=(name)
     song
   end
   
+  def self.all
+ @@all 
+end
+
+def save
+ @@all << self
+end 
+
 end
