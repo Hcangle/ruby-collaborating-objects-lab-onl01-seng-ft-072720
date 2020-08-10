@@ -22,11 +22,11 @@ def artist_name=(name)
   end
   
   def self.all
- @@all 
-end
+  @@all 
+ end
 
-def save
+ def save
  @@all << self
-end 
+ end 
 
 end
